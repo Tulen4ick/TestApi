@@ -25,7 +25,6 @@ namespace TestApi.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateUser(UserCreateDto dto)
         {
             try
